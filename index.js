@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
   { type: 'input', name: 'title', message: 'Enter your project title:' },
@@ -14,48 +15,7 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(answers => {
-    const readmeContent = `
-  # ${answers.title}
-  
-  ![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)
-  
-  ## Description
-  
-  ${answers.description}
-  
-  ## Table of Contents
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-  
-  ${answers.installation}
-  
-  ## Usage
-  
-  ${answers.usage}
-  
-  ## License
-  
-  This project is covered under the ${answers.license} license.
-  
-  ## Contributing
-  
-  ${answers.contributing}
-  
-  ## Tests
-  
-  ${answers.tests}
-  
-  ## Questions
-  
-  For any questions, please reach out to [${answers.username}](https://github.com/${answers.username}) or [email me](mailto:${answers.email}).
-    `;
+    const readmeContent = generateMarkdown(answers);
   
     fs.writeFile('README.md', readmeContent, err => {
       if (err) throw err;
