@@ -8,6 +8,8 @@
   This program generates a readme based on user submitted info
 
   Link to Video : https://drive.google.com/file/d/10RuVJYi7ooPVbR67NjsCY2QtJT6oZoIb/view
+
+  This program uses code from class assignments and study groups.
   
   ## Table of Contents
   
