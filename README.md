@@ -1,11 +1,13 @@
 
-  # a
+  # ReadMe Generator
   
-  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  ![license](https://img.shields.io/badge/License-MIT-blue.svg)
   
   ## Description
   
-  a
+  This program generates a readme based on user submitted info
+
+  Link to Video : https://drive.google.com/file/d/10RuVJYi7ooPVbR67NjsCY2QtJT6oZoIb/view
   
   ## Table of Contents
   
@@ -18,11 +20,11 @@
   
   ## Installation
   
-  a
+  Install node.js and inquirer
   
   ## Usage
   
-  a
+  N/A
   
   ## License
   
@@ -30,13 +32,13 @@
   
   ## Contributing
   
-  a
+  N/A
   
   ## Tests
   
-  a
+  N/A
   
   ## Questions
   
-  For any questions, please reach out to [a](https://github.com/a) or [email me](mailto:a).
+  For any questions, please reach out to [Tyfowler1](https://github.com/Tyfowler1) or [email me](mailto:N/a).
     
